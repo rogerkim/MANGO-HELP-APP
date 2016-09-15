@@ -151,28 +151,28 @@ namespace HelpMe
             // check order key
             if(String.IsNullOrEmpty(txtOrderID.Text))
             {
-                MessageBox.Show("망고 오더 아이디를 입력하세요.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("망고 주문번호를 입력하세요.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             // check address
             if (txtBoxAddress2.TextLength == 0)
             {
-                MessageBox.Show("주소를 입력해 주세요.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("주소를 입력해 주세요.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             // check address length
             if (txtBoxAddress2.TextLength > 45 || txtBoxAddress3.TextLength > 45)
             {
-                MessageBox.Show("최대 45글자까지 입력할수 있습니다.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("최대 45글자까지 입력할수 있습니다.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             // check order key
             if (!IsOrderExist(txtOrderID.Text))
             {
-                MessageBox.Show("망고 주문 아이디가 존재하지 않습니다.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("망고 주문 아이디가 존재하지 않습니다.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

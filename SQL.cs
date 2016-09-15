@@ -8,7 +8,7 @@ namespace HelpMe
 {
     public class SQL
     {
-        public static readonly string CONSTRING = "****";
+        public static readonly string CONSTRING = "***";
 
         public static readonly string SELECT_ORDER = "SELECT orderkey FROM Orders where ExternOrderKey=@orderID";
 

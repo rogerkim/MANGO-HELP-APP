@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtOrderID = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtBoxAddress2 = new System.Windows.Forms.TextBox();
@@ -79,16 +78,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(168, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Check DB";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnDBCheck_Click);
             // 
             // label2
             // 
@@ -166,7 +155,6 @@
             // 
             this.groupBox1.Controls.Add(this.btnMango2);
             this.groupBox1.Controls.Add(this.btnMango1);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(588, 468);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(297, 58);
@@ -219,7 +207,7 @@
             this.groupBox3.Size = new System.Drawing.Size(966, 367);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "잘못된 주소 확인 (터미널 코드 없는 주문)";
+            this.groupBox3.Text = "잘못된 주소 확인 (CJ 터미널 코드 없는 주문)";
             // 
             // dataGridView
             // 
@@ -259,7 +247,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtOrderID;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBoxAddress2;
